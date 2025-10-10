@@ -1,0 +1,22 @@
+import React from 'react'
+import data_product from '../../assets/data'
+import Item from '../Item/Item'
+import './Popular.css'
+
+function Popular() {
+  return (
+    <div className="popular">
+      <h1>POPULAR IN WOMEN</h1>
+      <hr />
+    <div className='popular-items'>
+        {data_product.map((item,index) => {
+            return (
+                <Item key={index} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price} />
+            )
+        })}
+        </div>
+    </div>
+  )
+}
+
+export default Popular 
