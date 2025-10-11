@@ -22,7 +22,7 @@ function ShopCategory(props) {
         {all_products.map((item,index) => {
           if(item.category === props.category){
             return (
-              <Item key={index} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price} />
+              <Item key={index} id={item.id} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price} />
             )
           } else return null;
         })}

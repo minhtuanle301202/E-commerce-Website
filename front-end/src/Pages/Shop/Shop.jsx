@@ -13,7 +13,6 @@ function Shop() {
       <Offers />  
       <NewCollections />
       <NewLetter />
-
     </div>
   )
 }

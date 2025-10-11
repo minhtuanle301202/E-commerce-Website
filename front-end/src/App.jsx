@@ -17,14 +17,14 @@ function App() {
     <Routes>
       <Route path='/' element={<Shop />}/>
       <Route path='/product' element={<Product />}>
-        <Route path=':id' element={<Product />}/>
+        <Route path=':productId' element={<Product />}/>
        </Route>
       <Route path='/cart' element={<Cart />}/>
       <Route path='/login' element={<LoginSignup />}/>
       <Route path='/mens' element={<ShopCategory category="men" banner={men_banner} />}/>
       <Route path='/womens' element={<ShopCategory category="women" banner={women_banner} />}/>
       <Route path='/kids' element={<ShopCategory category="kid" banner={kids_banner} />}/>
-      
+      <Route path='/login' element={<LoginSignup />}/>
     </Routes>
     </div>
   )
