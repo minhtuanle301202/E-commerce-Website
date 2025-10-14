@@ -1,0 +1,135 @@
+.cart-items {
+    margin: 50px 170px;
+}
+
+.cart-items hr {
+    height: 3px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.cart-items-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.cart-items-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart-items-product-image {
+    width: 100%;
+    height: auto;
+}
+
+.cart-items-quantity {
+    padding: 12px 16px;
+    width: 60px;
+    border: 1px solid #cecdcd;
+    background-color: white;
+}
+
+.cart-items-remove-icon {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.cart-items-down {
+    display: flex;
+    margin-top: 50px;
+}
+
+.cart-items-total {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 550px;
+
+}
+
+.cart-items-total h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+.cart-items-total-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #454545;
+    margin-bottom: 10px;
+}
+
+.cart-items-total hr {
+    margin-bottom: 10px;
+}
+
+
+
+.cart-items-price {
+    font-weight: 700;
+}
+
+
+.cart-items-checkout-button {
+    margin-top: 30px;
+    border: none;
+    background-color: #ff3535;
+    color: white;
+    padding: 15px 20px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart-items-code {
+    margin-top: 40px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-items-promobox {
+    display: flex;
+    align-items: center;
+}
+
+.cart-items-promobox input {
+    padding: 12px 16px;
+    width: 300px;
+    background-color: rgb(238, 237, 237);
+    border: none;
+    outline: none;
+}
+
+.cart-items-promobox button {
+    padding: 12px 16px;
+    border: none;
+    background-color: #191919;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    font-size: 14px;
+}
+

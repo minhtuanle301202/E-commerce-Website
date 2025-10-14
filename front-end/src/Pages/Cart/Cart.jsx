@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
+import CartItems from '../../Components/CartItems/CartItems'
 function Cart() {
   return (
     <div>
-      <Navbar />
+      <CartItems />
     </div>
   )
 }
