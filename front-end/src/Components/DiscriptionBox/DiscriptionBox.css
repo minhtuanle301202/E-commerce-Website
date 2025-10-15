@@ -30,3 +30,40 @@
     padding: 47px;
     padding-bottom: 70px;
 }
+
+@media (max-width: 1280px) {
+    .description-box {
+        margin: 90px 140px;
+    }
+
+    .description-box-nav {
+        width: 150px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .description-box-description {
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media(max-width: 900px) {
+    .description-box {
+        margin: 70px 50px;
+    }
+
+    .description-box-nav {
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .description-box-description {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .description-box-description p {
+        font-size: 14px;
+    }
+}

@@ -88,3 +88,63 @@
     color: red;
     cursor: pointer;
 }
+
+@media(max-width: 1280px) {
+    .login-signup-container {
+        width: 500px; /* Slightly reduce width */
+    }
+}
+
+/* For Tablets */
+@media(max-width: 800px) {
+    .login-signup-container {
+        width: 85%; /* Use percentage for more flexibility */
+        padding: 40px 30px;
+    }
+
+    .login-signup-container h1 {
+        font-size: 28px;
+    }
+}
+
+/* For Mobile Phones */
+@media(max-width: 600px) {
+    .login-signup {
+        padding: 20px 0; /* Reduce vertical padding on mobile */
+    }
+
+    .login-signup-container {
+        width: 90%; /* Take up more screen width */
+        padding: 30px 20px; /* Further reduce padding */
+        box-shadow: none; /* Remove shadow for a flatter mobile look */
+    }
+
+    .login-signup-container h1 {
+        font-size: 24px;
+        text-align: center; /* Center title on mobile */
+    }
+
+    .login-signup-fields {
+        gap: 15px;
+    }
+
+    .login-signup-fields input {
+        padding: 15px 20px;
+    }
+    
+    .login-signup-container button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .login-signup-login {
+        font-size: 14px;
+    }
+
+    .login-signup-agree {
+        gap: 12px;
+    }
+    .login-signup-agree p {
+        font-size: 12px;
+    }
+}

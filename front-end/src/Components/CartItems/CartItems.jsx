@@ -6,14 +6,14 @@ import './CartItems.css'
 import remove_icon from '../../assets/cart_cross_icon.png'
 
 function CartItems() {
-    const { all_products, cartItems, addToCart, removeFromCart,getTotalCartAmount } = useContext(ShopContext);
+    const { all_products, cartItems, addToCart, removeFromCart,getTotalCartAmount,decreaseCartItem } = useContext(ShopContext);
     return (
         <div className='cart-items'>
             <div className="cart-items-format-main">
                 <p>Products</p>
                 <p>Title</p>
                 <p>Price</p>
-                <p>Quanity</p>
+                <p>Quantity</p>
                 <p>Total</p>
                 <p>Remove</p>
             </div>
@@ -25,8 +25,14 @@ function CartItems() {
                             <div className="cart-items-format">
                                 <img src={product.image} alt="" className='cart-items-product-image' />
                                 <p>{product.name}</p>
-                                <p>${product.new_price}</p>
-                                <button className='cart-items-quantity'>{cartItems[product.id]}</button>
+                                <p className='cart-items-product-price'>${product.new_price}</p>
+                                <div className='cart-items-quantity'>
+                                    <button className="cart-items-sub-button" onClick={() => decreaseCartItem(product.id)}>-</button>
+                                    <p>{cartItems[product.id]}</p>
+                                    <button className="cart-items-add-button" onClick={() => addToCart(product.id)}>+</button>
+                                    
+                                </div>
+
 
                                 <p>${product.new_price * cartItems[product.id]}</p>
                                 <img src={remove_icon} alt="" className='cart-items-remove-icon' onClick={() => removeFromCart(product.id)} />
